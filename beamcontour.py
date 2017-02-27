@@ -19,9 +19,9 @@ phi = phi * np.pi / 180.
 theta = theta * np.pi / 180.
 db -= min(db)
 
-phi = np.reshape(phi, (151, xsize))
-theta = np.reshape(theta, (151, xsize))
-db = np.reshape(db, (151, xsize))
+phi = np.reshape(phi, (ysize, xsize))
+theta = np.reshape(theta, (ysize, xsize))
+db = np.reshape(db, (ysize, xsize))
 
 x = db * np.sin(theta) * np.cos(phi)
 y = db * np.sin(theta) * np.sin(phi)
