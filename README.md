@@ -8,7 +8,7 @@ Step-by-step:
 - reshape these arrays to be matrices: phi values are split into rows, starting each successive row after the max value of phi is reached.
   this will be the number of columns in the matrix.
   theta values are split into rows by finding the limits of theta travel on the plot: this will be the number of rows in the matrix. 
-  I suppose this assumes dtheta = 1degree: I will investigate.
+  I suppose this reshaping assumes dtheta in the radiation boundary setup in HFSS = 1degree: I will investigate.
   db values are flattened accordingly.
-- the typical transformation to from spherical coordinates to 3D cartesian is done
+- the typical transformation from spherical coordinates to 3D cartesian is done
 - values are plotted using plot_surface.
