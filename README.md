@@ -1,7 +1,7 @@
 # beamplot
 Direct pipeline from HFSS Plot3D Export File (.csv) to matplotlib 3D plot.
 
-HFSS exports its 3D beam map data in a way that is...not great, so this code break it down into something usable by matplotlib's 3D functions:
+HFSS exports its 3D beam map data in a way that is...not great, so this code breaks it down into something usable by matplotlib's 3D functions:
 X, Y, and Z arrays that can be passed to plot_surface to recreate the beam map, for manipulation and beautification using python.
 Step-by-step:
 - read in cols from hfss's .csv export file
